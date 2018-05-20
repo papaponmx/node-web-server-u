@@ -26,6 +26,13 @@ app.get('/home', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
     currentYear: new Date().getFullYear(),
+    welcomeMessage: `Welcome to home page. O nulla iudicem vidisse et eu cillum admodum firmissimum. Aut tempor do duis, id
+    aute eiusmod senserit ex veniam est si irure ullamco est mandaremus e nostrud.
+    Sint o incurreret se aliqua de illum appellat exquisitaque.Ea quae quibusdam
+    arbitrantur. Expetendis cohaerescant ex senserit ne quibusdam malis singulis nam
+    te nam familiaritatem, quibusdam nulla mentitum, incididunt sint aute laboris
+    anim, officia sint litteris admodum, tamen occaecat consectetur, quid quamquam
+    an firmissimum. Et tempor et quem si eram ea non amet voluptate.`,
   });
  });
 

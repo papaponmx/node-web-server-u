@@ -16,7 +16,17 @@ app.get('/', (req, res) => {
  });
 
 app.get('/about', (req, res) => {
-  res.render('about.hbs');
+  res.render('about.hbs', {
+    pageTitle: 'About Page',
+    currentYear: new Date().getFullYear(),
+  });
+ });
+
+app.get('/home', (req, res) => {
+  res.render('home.hbs', {
+    pageTitle: 'Home Page',
+    currentYear: new Date().getFullYear(),
+  });
  });
 
 
